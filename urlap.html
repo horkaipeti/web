@@ -2,32 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eladó tömő</title>
+    <title>Űrlap</title>
 </head>
-<body>
+<body style="background-color: black; color: cyan;">
+    <h1>HP boltja</h1>
     <form action="">
-
         <fieldset>
+            <legend>A Rendelésedhez</legend> <br>
+       
+        <label for="fname"></label>
+        <input type="text" placeholder="Ide írd a neved!"> <br>
+        <label for="lname"></label> 
+        <input type="text" placeholder="Ide írd a telefonszámod!"> <br> <br>
+        <label for="email"></label>
+        <input type="text" placeholder="Ide írd az email címed!"> <br> <br>
+        Add meg a nemed: <br>
 
-            <legend>ICEBERG</legend>
+        <input type="radio" name="nem" id="fiu">
+        <label for="nem">Fiú</label>
+        <input type="radio" name="nem" id="Lány">
+        <label for="lány">Lány</label>
 
-            <input type="checkbox" name="" id="ice1">
-            <label for="ice1">sour berry</label>
+
+            </fieldset> <br>
+
+            <fieldset>
+                <legend>kenyér</legend>
+                
+                <input type="radio" name="súly" id="s1">
+                <label for="s1">0.25kg</label>
+    
+                <input type="radio" name="súly" id="s2">
+                <label for="s2">0.5kg</label>
+    
+                <input type="radio" name="súly" id="s3">
+                <label for="s3">0.75kg</label>
+    
+                <input type="radio" name="súly" id="s4">
+                <label for="s4">1kg</label>
+    
+                <input type="radio" name="súly" id="s5">
+                <label for="s5">1.25kg</label> <br>
+    
+                
+                <label for="db">Mennyi legyen?</label>
+                <input type="number" placeholder="Ide egy számot!" name="db" id="db" min="1" style="width: 10pt;">
+
+                
+            </fieldset>
+            <fieldset>
+                <legend>kubu</legend>
+
+                <input type="radio" name="ütőreő" id="p1">
+                <label for="p1">gyenge</label> <br>
+
+                <input type="radio" name="ütőreő" id="p2">
+                <label for="p2">haladó szint</label><br>
+
+                <input type="radio" name="ütőreő" id="p3">
+                <label for="p3">profi</label> <br>
+
+                mennyire profi? <input type="range" name="mennyire profi" id="brutál">
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Szatyrok</legend>
+
+                <input type="checkbox" name="szatyor" id="sz1">
+                <label for="sz1">kicsi</label>
+
+                <input type="checkbox" name="szatyor" id="sz2">
+                <label for="sz2">közepes</label>
+
+                <input type="checkbox" name="szatyor" id="sz3">
+                <label for="sz3">nagy</label>
+
+                <input type="checkbox" name="szatypr" id="sz4">
+                <label for="sz4">A szatyor </label>
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Mikorra jöjjön meg?</legend>
+
+                <input type="date" name="ido" id="i1">
+                <br>
+                <input type="time" name="ido" id="i2">
+            </fieldset> <br>
+            <input type="checkbox" name="fel" id="fel">
+            <label for="fel">Ezek lehetnek radioaktívak!!! Ezzel elfogadja használti feltételeket
+
+            </label>
             <br>
-            <input type="checkbox" name="" id="ice2">
-            <label for="ice1">light berry</label>
             <br>
-            <input type="checkbox" name="" id="ice3">
-            <label for="ice1">heavy berry</label>
-            <br>
-            <input type="checkbox" name="" id="ice4">
-            <label for="ice1">fos berry</label>
-            
-
-        </fieldset>
-
+            <input type="button" value="RENDELÉS!">
+            <input type="reset" value="VISSZAVONÁS!">
     </form>
 </body>
 </html>
