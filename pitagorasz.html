@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>pitagorasz félig működő számolója :D</title>
+<script>
+function pitagorasz() {
+    var sideA = document.getElementById('sideA').value;
+    var sideB = document.getElementById('sideB').value;
+    var hypotenuse = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+    document.getElementById('result').innerHTML = 'Az oldal hossza ' + hypotenuse;
+}
+</script>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h2>pitagorasz számoló</h2>
+<form action="">
+    <fieldset>
+        <legend>
+            pitagorasz
+        </legend>
+        <p>Add meg az A és a B oldalt:</p>
+        <input type="number" id="sideA"> <br>
+        <input type="number" id="sideB"> <br>
+        <button onclick="pitagorasz()">SZÁMOLJ!</button>
+        <button>Reset (Nem jo)</button>
+        
+        
+        <p id="result"></p>
+    </fieldset>
+</form>
+    <img src="blabla/fasz 2.png" alt="" style=" position: fixed; bottom: 0px; right: 0px; height: 200px;">
+</body>
+</html>
